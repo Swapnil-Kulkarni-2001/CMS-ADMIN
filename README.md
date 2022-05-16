@@ -1,1 +1,1 @@
-# CMS-ADMIN
+# CMS-ADMIN Interface for CMS project.
