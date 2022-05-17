@@ -57,4 +57,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder>
             textType = itemView.findViewById(R.id.txt_club_type);
         }
     }
+
+    public void filterList(ArrayList<Club_Details> filterllist) {
+        arrayList = filterllist;
+        notifyDataSetChanged();
+    }
 }

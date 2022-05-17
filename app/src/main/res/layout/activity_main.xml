@@ -8,17 +8,16 @@
     android:background="#ededed"
     tools:context=".MainActivity">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/ed_search"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
             android:drawableStart="@drawable/custom_search_icon_selector"
             android:drawablePadding="12dp"
             android:inputType="textPersonName"
@@ -27,7 +26,7 @@
             android:textSize="20sp"
             android:ems="10"
             android:hint="search club"
-            android:background="@drawable/round_corner_row"
+            android:background="@drawable/custom_input"
             android:autofillHints="" />
 
 
@@ -45,18 +44,21 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="submit"
-        android:layout_margin="16dp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        app:fabSize="auto"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F18600"
+        android:contentDescription="submit"
+        android:scaleType="center"
         android:scaleX="1.5"
         android:scaleY="1.5"
-        android:scaleType="center"
+        android:src="@drawable/ic_add"
         app:fabCustomSize="55dp"
+        app:fabSize="auto"
         app:maxImageSize="40dp"
-        android:backgroundTint="#F18600"
-        app:tint="@android:color/white"
-        android:src="@drawable/ic_add"/>
+        app:tint="@android:color/white" />
 
 </RelativeLayout>
