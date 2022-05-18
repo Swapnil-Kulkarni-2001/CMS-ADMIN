@@ -14,6 +14,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import com.google.android.material.checkbox.MaterialCheckBox;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
+import papaya.in.sendmail.SendMail;
 
 public class CreateClub extends AppCompatActivity
 {
@@ -94,6 +95,13 @@ public class CreateClub extends AppCompatActivity
                     if (dialog_pass.getText().toString().equals("admin@123456"))
                     {
                         alertDialog.cancel();
+                        String email = club_email.getText().toString();
+                        String pass = club_pass.getText().toString();
+                        SendMail mail = new SendMail("clubmanagementsystem84@gmail.com","cms@989810",
+                                email,
+                                "Club Credentials",
+                                "Club account username : "+email+"\n"+"Club account password : "+pass);
+                        mail.execute();
                         SweetAlertDialog dialog = new SweetAlertDialog(CreateClub.this,SweetAlertDialog.SUCCESS_TYPE);
                         dialog.setCancelable(false);
                         dialog.setTitleText("Success");
