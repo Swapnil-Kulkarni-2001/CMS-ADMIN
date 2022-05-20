@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/border_box.xml" value="0.1975" />
         <entry key="app/src/main/res/drawable/card_background.xml" value="0.1975" />
         <entry key="app/src/main/res/drawable/custom_button.xml" value="0.1975" />
+        <entry key="app/src/main/res/drawable/custom_delete_button.xml" value="0.211" />
         <entry key="app/src/main/res/drawable/custom_dialog_key.xml" value="0.211" />
         <entry key="app/src/main/res/drawable/custom_id_icon.xml" value="0.1975" />
         <entry key="app/src/main/res/drawable/custom_input.xml" value="0.1975" />
@@ -20,6 +21,7 @@
         <entry key="app/src/main/res/drawable/round_corner_row.xml" value="0.1975" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/admin_login.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/club_account.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/club_row.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/create_club.xml" value="0.33" />
         <entry key="app/src/main/res/layout/password_dialog.xml" value="0.35625" />

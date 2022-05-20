@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CMS_Admin.iml" filepath="$PROJECT_DIR$/.idea/modules/CMS_Admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CMS_Admin.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CMS_Admin.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CMS_Admin.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CMS_Admin.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CMS_Admin.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CMS_Admin.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CMS_Admin.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CMS_Admin.app.unitTest.iml" />
     </modules>
   </component>
 </project>

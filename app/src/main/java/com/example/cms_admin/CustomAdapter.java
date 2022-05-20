@@ -15,9 +15,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder>
 {
 
     ArrayList<Club_Details> arrayList;
+    OnItemClickListner listner;
 
-    public CustomAdapter(ArrayList<Club_Details> arrayList) {
+    public CustomAdapter(ArrayList<Club_Details> arrayList,OnItemClickListner listner) {
         this.arrayList = arrayList;
+        this.listner = listner;
     }
 
     @NonNull
@@ -35,6 +37,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder>
         holder.logo.setImageResource(arrayList.get(position).getLogo());
         holder.textName.setText(arrayList.get(position).getName());
         holder.textType.setText(arrayList.get(position).getType());
+        holder.bind(arrayList.get(position),listner);
 
     }
 
@@ -55,6 +58,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder>
             logo = itemView.findViewById(R.id.img);
             textName = itemView.findViewById(R.id.txt_club_name);
             textType = itemView.findViewById(R.id.txt_club_type);
+        }
+
+        public void bind(final Club_Details item, final OnItemClickListner listener) {
+            itemView.setOnClickListener(v -> listener.onItemClick(item));
         }
     }
 
